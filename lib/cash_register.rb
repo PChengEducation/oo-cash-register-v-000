@@ -17,7 +17,7 @@ def add_item(item, price, quantity = 1)
 @transaction << price
 i = quantity
 until i == 0 do
-  @items << items
+  @items << item
   i -= 1
 end
 end
