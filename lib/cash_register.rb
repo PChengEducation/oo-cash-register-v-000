@@ -1,20 +1,20 @@
 class CashRegister
 
-attr_accessor :discount, :total
+attr_accessor :discount, :total, :quantity, :price
 
-@cart = []
+@items = []
 
 def initialize(discount = 0)
-
+@price = price
+@quantity = quantity
   @discount = discount
   @total = 0
+  @transactions = []
 end
 
 def add_item(item, price, quantity = 1)
 
   @cart[:name] = item
-  @cart[:price] = price
-  @cart[:quantity] = quantity
 
   @total += price * quantity
 end
