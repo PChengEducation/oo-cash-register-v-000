@@ -34,11 +34,7 @@ end
 
 def items
   item_names = []
-  .each do |item_info|
-    for qty in 1..item_info [:quantity]
-      item_names << item_info[:name]
-    end
-  end
+
   item_names
 end
 
