@@ -13,10 +13,13 @@ def initialize(discount = 0)
 end
 
 def add_item(item, price, quantity = 1)
-
-  @cart[:name] = item
-
-  @total += price * quantity
+@total += price * quantity
+@transaction << price
+i = quantity
+until i == 0 do
+  @items << items
+  i -= 1
+end
 end
 
 def apply_discount
